@@ -15,7 +15,6 @@ body {
     overflow-x:hidden;
 }
 
-/* Falling Hearts & Bears */
 .heart, .bear {
     position:fixed;
     top:-50px;
@@ -28,7 +27,6 @@ body {
     to{transform:translateY(110vh) rotate(360deg);}
 }
 
-/* Gift Box Screen */
 #gift-screen {
     position:fixed;
     top:0; left:0;
@@ -76,7 +74,6 @@ body {
     text-shadow:2px 2px 10px #000;
 }
 
-/* Main Page */
 #main-page {
     display:none;
     padding:20px;
@@ -89,7 +86,6 @@ body {
     to{opacity:1;}
 }
 
-/* Header with 2 small images + big heart */
 .header {
     text-align:center;
     margin-bottom:30px;
@@ -130,7 +126,6 @@ body {
     50%{transform:scale(1.2);}
 }
 
-/* Big Profile Image */
 .big-profile {
     width:100%;
     height:100vh;
@@ -142,7 +137,6 @@ body {
     opacity:0.3;
 }
 
-/* Menu Button */
 .menu-btn {
     position:fixed;
     top:20px;
@@ -160,7 +154,6 @@ body {
     margin:5px 0;
 }
 
-/* Dropdown Menu */
 .dropdown {
     position:fixed;
     top:70px;
@@ -185,7 +178,6 @@ body {
 }
 .dropdown a:hover{background:rgba(255,64,129,0.8);}
 
-/* Sections */
 .section {
     display:none;
     padding:20px;
@@ -199,31 +191,27 @@ body {
 .section p, .section li{line-height:1.8;margin:10px 0;color:#fff;}
 .section li{background:rgba(255,64,129,0.4);padding:10px;margin:8px 0;border-radius:8px;}
 
-/* Timer */
 .timer {
-    font-size:2em;
+    font-size:1.5em;
     color:#fff;
     text-align:center;
     margin:20px 0;
     text-shadow:2px 2px 10px #ff1744;
+    line-height:2;
 }
 </style>
 </head>
 <body>
 
-<!-- Falling Hearts & Bears -->
 <div id="falling-elements"></div>
 
-<!-- Big Background Profile Image -->
 <img src="profile.jpg" alt="أنوار" class="big-profile">
 
-<!-- Gift Box Screen -->
 <div id="gift-screen">
     <div class="gift-box" onclick="openGift()"></div>
     <div id="gift-text">اضغطي على الهدية يا أنوار 🎁</div>
 </div>
 
-<!-- Main Page -->
 <div id="main-page">
     <button class="menu-btn" onclick="toggleMenu()">
         <div></div><div></div><div></div>
@@ -244,7 +232,7 @@ body {
         
         <div class="couple-row">
             <div>
-                <img src="mohamed.jpg" alt="محمد">
+                <img src="mohammed.jpg" alt="محمد">
                 <p>محمد</p>
             </div>
             <div class="big-heart">❤️</div>
@@ -255,7 +243,6 @@ body {
         </div>
     </div>
 
-    <!-- Sections -->
     <div id="gifts" class="section">
         <h2>قسم الهدايا</h2>
         <h3>رسائل حب وعشق</h3>
@@ -272,51 +259,28 @@ body {
             <li>2. لو قابلتيني بكرة في أمدرمان، أول كلمة تقوليها شنو؟</li>
             <li>3. بتثقي فيني 100%؟</li>
         </ul>
-        <h3>اجب بنعم أو لا</h3>
-        <ul>
-            <li>1. بتشتاقي لي لمن ما أتكلم معاك يوم؟</li>
-            <li>2. حاسة إني بحبك بجد؟</li>
-            <li>3. عايزة تلاقيني قريب؟</li>
-        </ul>
-        <h3>مواقف</h3>
-        <ul>
-            <li>1. أكتر موقف ضحكناك فيهو شنو؟</li>
-            <li>2. موقف خلاك تزعلي مني؟</li>
-            <li>3. موقف ما بتنسيهو لينا؟</li>
-        </ul>
     </div>
 
     <div id="games" class="section">
         <h2>قسم الألعاب</h2>
         <p>لعبة الذاكرة: اكتبي أول 3 كلمات بتجي في بالك لما تسمعي اسمي.</p>
-        <p>لعبة التخمين: خمني أنا بحب شنو فيك أكتر حاجة.</p>
-        <p>لعبة الحروف: قولي كلمة حلوة تبدأ بحرف "أ".</p>
     </div>
 
     <div id="memories" class="section">
         <h2>قسم الذكريات</h2>
-        <p>
-        يا ستهم، صح في البداية أنا كنت بتاع بنات وصفحتي فيها أكتر من كم بت. 
-        بس شوفي حالي هسي، نزلتا وبقيت بحب لي واحدة بتساوي أكتر من ألف بت.
-        متمني أشوفك في أقرب زمن هنا في أمدرمان، وأوريك عملياً كل كلمة قلتها ليك.
-        </p>
+        <p>يا ستهم، صح في البداية أنا كنت بتاع بنات وصفحتي فيها أكتر من كم بت. 
+        بس شوفي حالي هسي، نزلتا وبقيت بحب لي واحدة بتساوي أكتر من ألف بت.</p>
     </div>
 
     <div id="quran" class="section">
         <h2>قسم القرآن والتسبيح</h2>
-        <h3>آيات عن الحب</h3>
         <p>"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
-        <p>"وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
-        <h3>آيات عن الصبر والبلاء</h3>
-        <p>"وَبَشِّرِ الصَّابِرِينَ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ"</p>
-        <p>"إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ"</p>
     </div>
 
     <div id="stories" class="section">
         <h2>قسم الروايات</h2>
         <p><strong>رواية: محمد وأنوار</strong></p>
-        <p>في يوم 12 نوفمبر 2024، رسل محمد طلب صداقة لأنوار. 
-        من اليوم داك، بدأت قصة ما كان متوقع ليها تنتهي. قصة حب بين أمدرمان وتشاد...</p>
+        <p>في يوم 12 نوفمبر 2024، رسل محمد طلب صداقة لأنوار...</p>
     </div>
 
     <div id="dates" class="section">
@@ -337,7 +301,6 @@ body {
 </audio>
 
 <script>
-// Create Falling Hearts & Bears
 function createFallingElements() {
     const elements = ['❤️','💖','💕','🧸','💗','❣️'];
     const container = document.getElementById('falling-elements');
@@ -350,13 +313,11 @@ function createFallingElements() {
         el.style.animationDuration = Math.random() * 3 + 4 + 's';
         el.style.fontSize = Math.random() * 15 + 20 + 'px';
         container.appendChild(el);
-        
         setTimeout(() => el.remove(), 8000);
     }, 500);
 }
 createFallingElements();
 
-// Open Gift
 function openGift() {
     document.getElementById('gift-sound').play().catch(()=>{});
     document.getElementById('bg-music').play().catch(()=>{});
@@ -371,12 +332,10 @@ function openGift() {
     }, 10000);
 }
 
-// Menu Toggle
 function toggleMenu() {
     document.getElementById('dropdown').classList.toggle('show');
 }
 
-// Show Section
 function showSection(id) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.getElementById(id).classList.add('active');
@@ -384,13 +343,19 @@ function showSection(id) {
     window.scrollTo(0,0);
 }
 
-// Timer
 function updateTimer() {
-    const start = new Date('2024-11-12');
+    const start = new Date('2024-11-12T00:00:00');
     const now = new Date();
     const diff = now - start;
+    
     const days = Math.floor(diff / (1000*60*60*24));
-    document.getElementById('timer').innerText = `مضى على لقائنا ${days} يوم ❤`;
+    const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const seconds = Math.floor((diff % (1000*60)) / 1000);
+    
+    document.getElementById('timer').innerHTML = 
+        `مضى على لقائنا<br>
+        ${days} يوم • ${hours} ساعة • ${minutes} دقيقة • ${seconds} ثانية ❤`;
 }
 setInterval(updateTimer, 1000);
 updateTimer();
